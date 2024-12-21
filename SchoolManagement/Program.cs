@@ -1,6 +1,12 @@
+using Microsoft.EntityFrameworkCore;
+using SchoolManagement.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+var connectionString = builder.Configuration.GetConnectionString("SchoolManagementDb");
+builder.Services.AddDbContext<SchoolManagementContext>(c=>c.UseSqlServer(connectionString));
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
