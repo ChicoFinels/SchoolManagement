@@ -1,10 +1,10 @@
-﻿@model SchoolManagement.Data.Student
+﻿@model SchoolManagement.Data.Class
 
 @{
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit Student</h1>
+<h1>Edit Class</h1>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -12,21 +12,21 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
             <div class="form-group">
-                <label asp-for="FirstName" class="control-label"></label>
-                <input asp-for="FirstName" class="form-control" />
-                <span asp-validation-for="FirstName" class="text-danger"></span>
+                <label asp-for="LecturerId" class="control-label"></label>
+                <select asp-for="LecturerId" class="form-control" asp-items="ViewBag.LecturerId"></select>
+                <span asp-validation-for="LecturerId" class="text-danger"></span>
             </div>
             <br />
             <div class="form-group">
-                <label asp-for="LastName" class="control-label"></label>
-                <input asp-for="LastName" class="form-control" />
-                <span asp-validation-for="LastName" class="text-danger"></span>
+                <label asp-for="CourseId" class="control-label"></label>
+                <select asp-for="CourseId" class="form-control" asp-items="ViewBag.CourseId"></select>
+                <span asp-validation-for="CourseId" class="text-danger"></span>
             </div>
             <br />
             <div class="form-group">
-                <label asp-for="DateOfBirth" class="control-label"></label>
-                <input type="date" asp-for="DateOfBirth" class="form-control" />
-                <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+                <label asp-for="Time" class="control-label"></label>
+                <input asp-for="Time" type="time" class="form-control" />
+                <span asp-validation-for="Time" class="text-danger"></span>
             </div>
             <br />
             <div class="form-group">
