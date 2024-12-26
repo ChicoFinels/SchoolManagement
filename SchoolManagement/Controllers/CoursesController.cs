@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SchoolManagement.Data;
 
 namespace SchoolManagement.Controllers
 {
+    [Authorize]
     public class CoursesController : Controller
     {
         private readonly SchoolManagementContext _context;

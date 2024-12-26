@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using SchoolManagement.Data;
 
 namespace SchoolManagement.Controllers
 {
+    [Authorize]
     public class EnrollmentsController : Controller
     {
         private readonly SchoolManagementContext _context;
