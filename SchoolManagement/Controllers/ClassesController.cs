@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using AspNetCoreHero.ToastNotification.Abstractions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -11,10 +12,12 @@ namespace SchoolManagement.Controllers
     public class ClassesController : Controller
     {
         private readonly SchoolManagementContext _context;
+        private readonly INotyfService _notyfService;
 
-        public ClassesController(SchoolManagementContext context)
+        public ClassesController(SchoolManagementContext context, INotyfService notyfService)
         {
             _context = context;
+            _notyfService = notyfService;
         }
 
         // GET: Classes
@@ -212,6 +215,7 @@ namespace SchoolManagement.Controllers
                     ClassId = classId,
                     StudentId = studentId,
                 });
+                _notyfService.Success("Student Enrolled Successfully");
             }
             else
             {
@@ -219,6 +223,7 @@ namespace SchoolManagement.Controllers
                 if (enrollment != null)
                 {
                     _context.Remove(enrollment);
+                    _notyfService.Warning("Student Unenrolled Successfully");
                 }
             }
 
