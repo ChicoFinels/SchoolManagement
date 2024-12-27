@@ -5,13 +5,11 @@ namespace SchoolManagement.Data;
 
 public class ClassMetadata
 {
-    [Display(Name = "Lecturer Id")]
+    [Display(Name = "Lecturer")]
     public int? LecturerId { get; set; }
 
-    [Display(Name = "Course Id")]
+    [Display(Name = "Course")]
     public int? CourseId { get; set; }
-
-    public TimeOnly? Time { get; set; }
 }
 
 [ModelMetadataType(typeof(ClassMetadata))]

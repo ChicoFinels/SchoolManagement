@@ -5,13 +5,11 @@ namespace SchoolManagement.Data;
 
 public class EnrollmentMetadata
 {
-    [Display(Name = "Student Id")]
+    [Display(Name = "Student")]
     public int? StudentId { get; set; }
 
-    [Display(Name = "Class Id")]
+    [Display(Name = "Class")]
     public int? ClassId { get; set; }
-
-    public string? Grade { get; set; }
 }
 
 [ModelMetadataType(typeof(EnrollmentMetadata))]
