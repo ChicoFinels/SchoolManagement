@@ -1,5 +1,17 @@
-<h1>School Management</h1>
-<p>This project was developed during the <a href="https://www.udemy.com/course/learn-aspnet-mvc-and-entity-framework/">ASP.NET Core - Cross-Platform Development</a> course by <a href="https://www.udemy.com/user/trevoirwilliams/">Trevoir Williams</a>.</p>
+# School Management
+![GitHub repo size](https://img.shields.io/github/repo-size/ChicoFinels/SchoolManagement?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/ChicoFinels/SchoolManagement?style=for-the-badge)
+
+<p>This project was developed with .NET 9 during the <a href="https://www.udemy.com/course/learn-aspnet-mvc-and-entity-framework/">ASP.NET Core - Cross-Platform Development</a> course by <a href="https://www.udemy.com/user/trevoirwilliams/">Trevoir Williams</a>.</p>
+
+## 💻 Prerequisites
+
+Before you start, I recommend:
+- Install the latest version of Visual Studio;
+- Install the latest version of SQL Server and SQL Server Management Studio (SSMS) or Azure Data Studio;
+
+## ☕ Using School Management
+
 <p>Since this project uses the Database First approach, you have to run the SQL script present in this repository to generate the database.</p>
 <p>If you want to add something else to the script, you need to run a new database scaffold to update your models, here is an example of the command:</p>
 
