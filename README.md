@@ -4,11 +4,19 @@
 
 <p>This project was developed with .NET 9 during the <a href="https://www.udemy.com/course/learn-aspnet-mvc-and-entity-framework/">ASP.NET Core - Cross-Platform Development</a> course by <a href="https://www.udemy.com/user/trevoirwilliams/">Trevoir Williams</a>.</p>
 
+## 📝 Contents
+
+- .NET 9
+- ASP.NET Core MVC
+- Entity Framework Core - Database First
+- Auth0
+- Bootstrap & jQuery libraries
+
 ## 💻 Prerequisites
 
 Before you start, I recommend:
-- Install the latest version of Visual Studio;
-- Install the latest version of SQL Server and SQL Server Management Studio (SSMS) or Azure Data Studio;
+- Install the latest version of Visual Studio
+- Install the latest version of SQL Server and SQL Server Management Studio (SSMS) or Azure Data Studio
 
 ## ☕ Using School Management
 
