@@ -2,6 +2,7 @@ CREATE DATABASE SchoolManagement
 GO
 
 USE SchoolManagement
+GO
 
 CREATE TABLE Students(
 	Id INT PRIMARY KEY IDENTITY,
@@ -13,7 +14,7 @@ CREATE TABLE Students(
 CREATE TABLE Lecturers(
 	Id INT PRIMARY KEY IDENTITY,
 	FirstName NVARCHAR(50) NOT NULL,
-	LastName NVARCHAR(50) NOT NULL,
+	LastName NVARCHAR(50) NOT NULL
 )
 
 CREATE TABLE Courses(
@@ -36,3 +37,4 @@ CREATE TABLE Enrollments(
 	ClassId INT FOREIGN KEY REFERENCES Classes(Id),
 	Grade NVARCHAR(2)
 )
+GO
