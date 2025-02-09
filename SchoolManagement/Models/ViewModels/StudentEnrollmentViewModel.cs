@@ -1,4 +1,4 @@
-﻿namespace SchoolManagement.Models
+﻿namespace SchoolManagement.Models.ViewModels
 {
     public class StudentEnrollmentViewModel
     {

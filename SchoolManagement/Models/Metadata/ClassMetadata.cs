@@ -10,6 +10,9 @@ public class ClassMetadata
 
     [Display(Name = "Course")]
     public int? CourseId { get; set; }
+
+    [Required]
+    public TimeOnly Time { get; set; }
 }
 
 [ModelMetadataType(typeof(ClassMetadata))]

@@ -1,3 +1,4 @@
+global using SchoolManagement.Models.ViewModels;
 using AspNetCoreHero.ToastNotification;
 using AspNetCoreHero.ToastNotification.Extensions;
 using Auth0.AspNetCore.Authentication;

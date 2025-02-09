@@ -5,11 +5,13 @@ namespace SchoolManagement.Data;
 
 public class LecturerMetadata
 {
+    [Required]
     [Display(Name = "First Name")]
-    public string FirstName { get; set; } = null!;
+    public string FirstName { get; set; }
 
+    [Required]
     [Display(Name = "Last Name")]
-    public string LastName { get; set; } = null!;
+    public string LastName { get; set; }
 }
 
 [ModelMetadataType(typeof(LecturerMetadata))]
